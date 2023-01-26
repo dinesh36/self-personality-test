@@ -3,6 +3,12 @@
 .app {
   color: $black-font;
 
+  .mainTitle{
+    max-width: 1200px;
+    font-size: 36px;
+    margin: 60px auto;
+  }
+
   .appContent {
     min-height: calc(100vh - 110px - 86px);
     max-width: 1200px;
@@ -15,10 +21,10 @@
 
     .rightContent {
       width: 375px;
-      padding: 20px;
+      padding: 0px 20px 20px;
 
       .adContent1 {
-        height: 600px;
+        height: 500px;
         margin-bottom: 20px;
       }
 

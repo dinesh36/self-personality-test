@@ -23,9 +23,16 @@ function AppLayout({children}: {children: React.ReactNode}) {
         </div>
     }
 
+    const renderMainTitle = ()=>{
+        return <div className={styles.mainTitle}>
+            Check your personality
+        </div>
+    }
+
 
     return <div className={styles.app}>
         <Header/>
+            {renderMainTitle()}
             <div className={styles.appContent}>
                 {renderLeftContent()}
                 {renderRightContent()}

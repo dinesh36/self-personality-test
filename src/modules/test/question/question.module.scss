@@ -1,0 +1,40 @@
+@import '../../../assets/scss/variables';
+
+.question{
+  .questionTitle{
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  .answerOptions{
+    .answerOption{
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      padding: 20px 15px;
+      background: #F6F6F6;
+      border-radius: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #dddddd;
+      &.selected{
+        background: $primary-color-light;
+        border-color: $primary-color-border-light;
+      }
+    }
+  }
+  .buttonContainer{
+    display: flex;
+    justify-content: space-between;
+    :global .ant-btn:first-of-type{
+      margin-right: 10px;
+    }
+    :global .ant-btn:last-of-type{
+      margin-left: 10px;
+    }
+
+    :global .ant-btn{
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
