@@ -1,11 +1,14 @@
-import '../styles/globals.css'
+import '../styles/globals.css';
+import type { AppProps } from 'next/app';
 import AppLayout from '../src/modules/layout/app-layout/app-layout';
-import type { AppProps } from 'next/app'
 
 function PersonalityTest({ Component, pageProps }: AppProps) {
-  return <AppLayout>
+  return (
+    <AppLayout>
+      {/* eslint-disable-next-line react/jsx-props-no-spreading */}
       <Component {...pageProps} />
-  </AppLayout>
+    </AppLayout>
+  );
 }
 
-export default PersonalityTest
+export default PersonalityTest;

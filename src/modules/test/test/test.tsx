@@ -1,13 +1,10 @@
 import styles from './test.module.scss';
-import Question from "../question/question";
+import Question from '../question/question';
 
+const Test = () => (
+  <div className={styles.test}>
+    <Question />
+  </div>
+);
 
-const Test = () => {
-    return (
-        <div className={styles.test}>
-            <Question />
-        </div>
-    )
-}
-
-export default Test
+export default Test;

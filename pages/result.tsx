@@ -1,10 +1,8 @@
 import type { NextPage } from 'next';
-import Result from "../src/modules/result/result/result";
+import Result from '../src/modules/result/result/result';
 
-const ResultPage: NextPage = () => {
-    return (
-        <Result />
-    )
-}
+const ResultPage: NextPage = () => (
+  <Result />
+);
 
-export default ResultPage
+export default ResultPage;
