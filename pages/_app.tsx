@@ -1,8 +1,11 @@
 import '../styles/globals.css'
+import AppLayout from '../src/layout/app-layout/app-layout';
 import type { AppProps } from 'next/app'
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+function PersonalityTest({ Component, pageProps }: AppProps) {
+  return <AppLayout>
+      <Component {...pageProps} />
+  </AppLayout>
 }
 
-export default MyApp
+export default PersonalityTest
