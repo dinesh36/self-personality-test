@@ -1,0 +1,10 @@
+@import '../../../../assets/scss/variables';
+
+.button:global.ant-btn-primary{
+  background: $primary-color;
+  font-size: 16px;
+  font-weight: 500;
+  padding:10px 20px;
+  border-radius: 5px;
+  height: auto;
+}

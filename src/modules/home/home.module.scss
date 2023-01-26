@@ -1,0 +1,24 @@
+.home{
+    .title{
+      font-size: 36px;
+      margin-top: 64px;
+      margin-bottom: 60px;
+    }
+    .homeImage{
+      height: 400px;
+      display: block;
+      margin: 0px auto;
+    }
+    .homeDescription{
+      border: 1px solid #E8E8E8;
+      border-radius: 10px;
+      padding: 45px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      font-size: 18px;
+      .subTitle{
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+    }
+}
