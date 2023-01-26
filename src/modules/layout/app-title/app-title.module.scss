@@ -1,0 +1,9 @@
+@import '../../../assets/scss/variables.scss';
+
+.appTitle{
+  font-size: 18px;
+  font-weight: 500;
+  .primaryColor{
+    color: $primary-color;
+  }
+}

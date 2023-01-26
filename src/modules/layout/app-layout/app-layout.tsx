@@ -6,7 +6,9 @@ import React from 'react';
 function AppLayout({children}: {children: React.ReactNode}) {
     return <div className={styles.app}>
         <Header/>
-            {children}
+            <div className={styles.appContent}>
+                {children}
+            </div>
         <Footer/>
     </div>
 }

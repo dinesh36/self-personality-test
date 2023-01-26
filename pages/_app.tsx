@@ -1,5 +1,5 @@
 import '../styles/globals.css'
-import AppLayout from '../src/layout/app-layout/app-layout';
+import AppLayout from '../src/modules/layout/app-layout/app-layout';
 import type { AppProps } from 'next/app'
 
 function PersonalityTest({ Component, pageProps }: AppProps) {

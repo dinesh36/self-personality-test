@@ -1,0 +1,12 @@
+.footer{
+    padding: 30px 120px;
+    display: flex;
+    justify-content: space-between;
+    .footerIcons{
+        .footerIcon{
+            height: 22px;
+            width: 22px;
+            margin-left: 20px;
+        }
+    }
+}
