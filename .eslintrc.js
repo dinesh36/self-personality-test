@@ -15,6 +15,7 @@ module.exports = {
     'react/static-property-placement':'off',
     'react/no-unused-state': 'off',
     'no-return-await': 'off',
-    'react/react-in-jsx-scope': 'off'
+    'react/react-in-jsx-scope': 'off',
+    'import/prefer-default-export': 'off'
   }
 };

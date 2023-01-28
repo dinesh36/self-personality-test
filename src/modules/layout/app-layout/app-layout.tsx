@@ -1,9 +1,12 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import styles from './app-layout.module.scss';
 import Header from '../header/header';
 import Footer from '../footer/footer';
+import { IRootStore } from '../../../store/store/store.type';
 
 function AppLayout({ children }: {children: React.ReactNode}) {
+  const mainTitle = useSelector((state: IRootStore) => state.layoutState.title);
   const renderLeftContent = () => (
     <div className={styles.leftContent}>
       {children}
@@ -23,7 +26,7 @@ function AppLayout({ children }: {children: React.ReactNode}) {
 
   const renderMainTitle = () => (
     <div className={styles.mainTitle}>
-      Check your personality
+      {mainTitle}
     </div>
   );
 

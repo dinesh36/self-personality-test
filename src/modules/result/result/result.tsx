@@ -1,6 +1,8 @@
 import { useState } from 'react';
+import { useDispatch } from 'react-redux';
 import styles from './result.module.scss';
 import Button from '../../shared/components/button/button';
+import { updateTitle } from '../../../store/store/layout/layout.action';
 
 const introvertResult = {
   title: 'introvert',
@@ -18,6 +20,8 @@ const Result = () => {
   const [result, setResult] = useState(introvertResult);
 
   const renderResultImage = () => <img src={`images/result/${result.title}.png`} className={styles.resultText} alt={result.title} />;
+  const dispatch = useDispatch();
+  dispatch(updateTitle('Your Result'));
 
   const renderResultText = () => (
     <div className={styles.resultText}>

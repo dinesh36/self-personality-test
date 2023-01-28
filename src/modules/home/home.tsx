@@ -1,9 +1,14 @@
 import Link from 'next/link';
+import { useDispatch } from 'react-redux';
 import styles from './home.module.scss';
 import Button from '../shared/components/button/button';
 import Card from '../shared/components/card/card';
+import { updateTitle } from '../../store/store/layout/layout.action';
 
 function Home() {
+  const dispatch = useDispatch();
+  dispatch(updateTitle('Check your personality'));
+
   return (
     <div className={styles.home}>
       <img className={styles.homeImage} src="images/app-logo.png" alt="logo" />
