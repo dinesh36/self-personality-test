@@ -31,19 +31,19 @@ export const getAllQuestions: ()=>Promise<Array<IQuestion>> = async () => {
     ],
   },
   {
-    title: 'Second question',
+    title: 'You’ve been sitting in the doctor’s waiting room for more than 25 minutes. You: ',
     id: 2,
     answerOptions: [
-      { title: 'Don’t dare to interrupt them', id: 1, alphabet: 'A' },
-      { title: 'Think it’s more important to give them some of your time; work can wait', id: 2, alphabet: 'B' },
+      { title: 'Look at your watch every two minutes', id: 1, alphabet: 'A' },
+      { title: 'Complain in a loud voice, while tapping your foot impatiently', id: 2, alphabet: 'B' },
     ],
   },
   {
-    title: 'Third question',
+    title: 'You are taking part in a guided tour of a museum. You:',
     id: 3,
     answerOptions: [
-      { title: 'Don’t dare to interrupt them', id: 1, alphabet: 'A' },
-      { title: 'Think it’s more important to give them some of your time; work can wait', id: 2, alphabet: 'B' },
+      { title: 'Follow the group without question', id: 1, alphabet: 'A' },
+      { title: 'Are right up the front, adding your own comments in a loud voice', id: 2, alphabet: 'B' },
     ],
   },
   ];
