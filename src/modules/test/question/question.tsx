@@ -1,40 +1,53 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import Card from '../../shared/components/card/card';
 import styles from './question.module.scss';
 import Button from '../../shared/components/button/button';
+import { IAnswerOption, IQuestion } from '../shared/test.types';
+import { IRootStore } from '../../../store/store/store.type';
+import { updateAnswer, updateCurrentQuestion } from '../../../store/store/test/test.action';
 
-const Question = () => {
-  const [selectedAnswerId, setSelectedAnswerId] = useState(2);
+const Question = ({ question, submitTest }: {question: IQuestion, submitTest: ()=>void}) => {
+  const [selectedAnswerId, setSelectedAnswerId] = useState(1);
+  const answers = useSelector(
+    (state: IRootStore) => state.testState.answers,
+  );
+  const currentQuestionIndex = useSelector(
+    (state: IRootStore) => state.testState.currentQuestionIndex,
+  );
+  const totalQuestionsLength = useSelector(
+    (state: IRootStore) => state.testState.questions.length,
+  );
+
+  const dispatch = useDispatch();
   const renderQuestionTitle = () => (
     <div className={styles.questionTitle}>
-      You’re really busy at work and a colleague is
-      telling you their life story and personal woes. You:
+      {question.title}
     </div>
   );
 
+  useEffect(() => {
+    setSelectedAnswerId(answers[question.id] || 1);
+  }, [question.id]);
+
   const renderAnswerOptions = () => {
-    const answers = [
-      { text: 'Don’t dare to interrupt them', id: 1, alphabet: 'A' },
-      { text: 'Think it’s more important to give them some of your time; work can wait', id: 2, alphabet: 'B' },
-      { text: 'Listen, but with only with half an ear', id: 3, alphabet: 'C' },
-      { text: 'Interrupt and explain that you are really busy at the moment', id: 4, alphabet: 'D' },
-    ];
+    const { answerOptions } = question;
     return (
       <div className={styles.answerOptions}>
-        {answers.map((answer) => (
+        {answerOptions.map((answerOption: IAnswerOption) => (
           // eslint-disable-next-line max-len
           // eslint-disable-next-line jsx-a11y/click-events-have-key-events,jsx-a11y/no-static-element-interactions
           <div
-            onClick={() => setSelectedAnswerId(answer.id)}
-            className={`${styles.answerOption} ${selectedAnswerId === answer.id ? styles.selected : ''}`}
-            key={answer.id}
+            onClick={() => setSelectedAnswerId(answerOption.id)}
+            className={`${styles.answerOption} ${selectedAnswerId === answerOption.id ? styles.selected : ''}`}
+            key={answerOption.id}
           >
             <span>
-              {answer.alphabet}
+              {answerOption.alphabet}
               . &nbsp;
-              {answer.text}
+              {answerOption.title}
             </span>
-            {selectedAnswerId === answer.id
+            {selectedAnswerId === answerOption.id
               ? <img src="images/test/selected-icon.svg" alt="selected icon" /> : null}
           </div>
         ))}
@@ -42,10 +55,24 @@ const Question = () => {
     );
   };
 
+  const gotoNextQuestion = () => {
+    dispatch(updateAnswer({ questionId: question.id, answerOptionId: selectedAnswerId }));
+    if (currentQuestionIndex === totalQuestionsLength - 1) {
+      submitTest();
+      return;
+    }
+    dispatch(updateCurrentQuestion(currentQuestionIndex + 1));
+  };
+
+  const gotoPreviousQuestion = () => {
+    dispatch(updateAnswer({ questionId: question.id, answerOptionId: selectedAnswerId }));
+    dispatch(updateCurrentQuestion(currentQuestionIndex - 1));
+  };
+
   const renderNextPreviousButtons = () => (
     <div className={styles.buttonContainer}>
-      <Button type="default">Previous</Button>
-      <Button type="primary">Next</Button>
+      {currentQuestionIndex === 0 ? null : <Button type="default" onClick={gotoPreviousQuestion}>Previous</Button>}
+      <Button type="primary" onClick={gotoNextQuestion}>{currentQuestionIndex === totalQuestionsLength - 1 ? 'Finish Test' : 'Next'}</Button>
     </div>
   );
 

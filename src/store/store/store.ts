@@ -5,12 +5,14 @@ import thunk from 'redux-thunk';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import layoutReducer from './layout/layout.reducer';
 import { IRootStore } from './store.type';
+import testReducer from './test/test.reducer';
 
 let cachedStore: (
   Store<EmptyObject & IRootStore, AnyAction> & { dispatch: unknown; }) | null = null;
 
 export const getStaticReducer = () => ({
   layoutState: layoutReducer,
+  testState: testReducer,
 });
 
 export const configureStore = () => {
