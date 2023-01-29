@@ -1,5 +1,21 @@
 $primary-color: #108a00;
 $secondary-color: #F6F6F6;
 $black-font:#0D1A3A;
+
+$tablet-width: 768px;
+$desktop-width: 1024px;
+$mobile-width: 480px;
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (min-width: #{$mobile-width}) and (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
 $primary-color-light: rgba(16, 138, 0, 0.1);
 $primary-color-border-light: rgba(16, 138, 0, 0.4);

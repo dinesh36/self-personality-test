@@ -7,6 +7,12 @@
     max-width: 1200px;
     font-size: 36px;
     margin: 60px auto;
+    @include tablet{
+      padding: 0px 5vw;
+    }
+    @include mobile{
+      padding: 0px 5vw;
+    }
   }
 
   .appContent {
@@ -17,11 +23,23 @@
 
     .leftContent {
       flex: 1;
+      @include tablet{
+        padding: 0px 5vw;
+      }
+      @include mobile{
+        padding: 0px 5vw;
+      }
     }
 
     .rightContent {
       width: 375px;
       padding: 0px 20px 20px;
+      @include tablet{
+        display: none;
+      }
+      @include mobile{
+        display: none;
+      }
 
       .adContent1 {
         height: 500px;
