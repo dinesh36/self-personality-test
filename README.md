@@ -9,6 +9,8 @@ yarn dev
 ```
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## [Online App demo link](https://personality-test.raimp.com/)
+
 ## Desktop Screens
 ### Home Page
 <img src="screen-shots/desktop/home-desktop.png" width="400">

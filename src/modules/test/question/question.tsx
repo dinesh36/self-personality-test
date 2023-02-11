@@ -27,6 +27,7 @@ const Question = ({ question, submitTest }: {question: IQuestion, submitTest: ()
   );
 
   useEffect(() => {
+    // @ts-ignore
     setSelectedAnswerId(answers[question.id] || 1);
   }, [question.id]);
 
