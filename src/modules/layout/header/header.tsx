@@ -1,11 +1,20 @@
+import Link from 'next/link';
 import styles from './header.module.scss';
-import AppTitle from '../app-title/app-title';
 
 function Header() {
+  const renderLogo = () => (
+    <img className={styles.logo} src="images/header/header-logo.png" alt="logo" />
+  );
+
+  const renderTitle = () => <div className={styles.title}>Self Personality Test</div>;
+
   return (
-    <div className={styles.header}>
-      <AppTitle />
-    </div>
+    <Link href="/">
+      <div className={styles.header}>
+        {renderLogo()}
+        {renderTitle()}
+      </div>
+    </Link>
   );
 }
 

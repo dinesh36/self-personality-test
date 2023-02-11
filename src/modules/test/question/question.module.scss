@@ -4,6 +4,9 @@
   .questionTitle{
     font-size: 24px;
     margin-bottom: 30px;
+    @include mobile-and-tablet{
+      font-size: 20px;
+    }
   }
   .answerOptions{
     .answerOption{
@@ -30,6 +33,12 @@
     }
     :global .ant-btn:last-of-type{
       margin-left: 10px;
+    }
+
+    &.firstQuestion {
+      :global .ant-btn{
+        margin-left: 0px;
+      }
     }
 
     :global .ant-btn{

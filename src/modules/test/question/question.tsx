@@ -70,7 +70,7 @@ const Question = ({ question, submitTest }: {question: IQuestion, submitTest: ()
   };
 
   const renderNextPreviousButtons = () => (
-    <div className={styles.buttonContainer}>
+    <div className={`${styles.buttonContainer} ${currentQuestionIndex === 0 ? styles.firstQuestion : ''}`}>
       {currentQuestionIndex === 0 ? null : <Button type="default" onClick={gotoPreviousQuestion}>Previous</Button>}
       <Button type="primary" onClick={gotoNextQuestion}>{currentQuestionIndex === totalQuestionsLength - 1 ? 'Finish Test' : 'Next'}</Button>
     </div>

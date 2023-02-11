@@ -15,10 +15,7 @@ function AppLayout({ children }: {children: React.ReactNode}) {
 
   const renderRightContent = () => (
     <div className={styles.rightContent}>
-      <div className={styles.adContent1}>
-        <img src="images/ad/google-ads.png" alt="ad" />
-      </div>
-      <div className={styles.adContent2}>
+      <div className={styles.adContent}>
         <img src="images/ad/google-ads.png" alt="ad" />
       </div>
     </div>

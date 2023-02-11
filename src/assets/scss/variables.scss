@@ -13,8 +13,27 @@ $mobile-width: 480px;
 }
 
 @mixin mobile {
-  @media (min-width: #{$mobile-width}) and (max-width: #{$tablet-width - 1px}) {
+  @media (max-width: #{$tablet-width - 1px}) {
     @content;
+  }
+}
+
+@mixin mobile-and-tablet {
+  @media (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin appHorizontalPadding {
+  padding-left: 3vw;
+  padding-right: 3vw;
+  @include tablet{
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  @include mobile{
+    padding-left: 5vw;
+    padding-right: 5vw;
   }
 }
 $primary-color-light: rgba(16, 138, 0, 0.1);

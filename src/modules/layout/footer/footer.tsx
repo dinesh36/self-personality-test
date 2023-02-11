@@ -1,10 +1,11 @@
+import Link from 'next/link';
 import styles from './footer.module.scss';
 import AppTitle from '../app-title/app-title';
 
 function Footer() {
-  const renderCopyRightText = () => (
+  const renderWritterInfo = () => (
     <div>
-      Self Personality Test
+      dinesh36@github
     </div>
   );
 
@@ -18,11 +19,13 @@ function Footer() {
   };
 
   return (
-    <div className={styles.footer}>
-      <AppTitle />
-      {renderFooterIcon()}
-      {renderCopyRightText()}
-    </div>
+    <Link href="/">
+      <div className={styles.footer}>
+        <AppTitle />
+        {renderFooterIcon()}
+        {renderWritterInfo()}
+      </div>
+    </Link>
   );
 }
 

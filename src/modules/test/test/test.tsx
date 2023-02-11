@@ -13,7 +13,7 @@ const Test = () => {
   const dispatch = useDispatch();
   const router = useRouter();
 
-  dispatch(updateTitle('Check your personality'));
+  dispatch(updateTitle('Test your personality'));
   const currentQuestionIndex = useSelector(
     (state: IRootStore) => state.testState.currentQuestionIndex,
   );

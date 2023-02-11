@@ -6,4 +6,7 @@
   padding: 45px;
   margin-bottom: 30px;
   font-size: 18px;
+  @include mobile{
+    padding: 25px;
+  }
 }

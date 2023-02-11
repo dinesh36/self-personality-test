@@ -1,4 +1,5 @@
 import Link from 'next/link';
+// eslint-disable-next-line import/no-extraneous-dependencies
 import { useDispatch } from 'react-redux';
 import styles from './home.module.scss';
 import Button from '../shared/components/button/button';
@@ -7,7 +8,7 @@ import { updateTitle } from '../../store/store/layout/layout.action';
 
 function Home() {
   const dispatch = useDispatch();
-  dispatch(updateTitle('Check your personality'));
+  dispatch(updateTitle('Test your personality'));
 
   return (
     <div className={styles.home}>
@@ -24,7 +25,7 @@ function Home() {
           Do you want to know what kind of person you are ? Let&apos;s Check
         </p>
         <Link href="/test">
-          <Button type="primary">
+          <Button type="primary" className={styles.startButton}>
             Start Test
           </Button>
         </Link>
