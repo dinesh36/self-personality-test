@@ -14,6 +14,7 @@ const config: Config.InitialOptions = {
     '!<rootDir>/build/**',
     '!<rootDir>/*.__mocks__.js',
     '!<rootDir>/coverage/**',
+    '!<rootDir>/jest/**',
     '!.eslintrc.js',
     '!babel.config.js',
     '!jest.config.ts',
@@ -35,8 +36,16 @@ const config: Config.InitialOptions = {
     '^@/components/(.*)$': '<rootDir>/components/$1',
   },
   // Add more setup options before each test is run
-  // setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
-  testPathIgnorePatterns: ['<rootDir>/node_modules/', '<rootDir>/.next/', '<rootDir>/build/', '<rootDir>/coverage/'],
+  setupFilesAfterEnv: ['<rootDir>/jest/jest.setup.js'],
+  testPathIgnorePatterns: [
+    '<rootDir>/node_modules/',
+    '<rootDir>/.next/',
+    '<rootDir>/build/',
+    '<rootDir>/coverage/',
+    '<rootDir>/src/modules/test/test/test.tsx',
+    '<rootDir>/pages/test.tsx',
+    '<rootDir>/jest/',
+  ],
   testEnvironment: 'jsdom',
   transform: {
     // Use babel-jest to transpile tests with the next/babel preset
