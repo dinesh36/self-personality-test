@@ -47,7 +47,7 @@ exports[`Question Component Should render the question component 1`] = `
       type="button"
     >
       <span>
-        Next
+        Finish Test
       </span>
     </button>
   </div>
