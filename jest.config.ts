@@ -14,7 +14,7 @@ const config: Config.InitialOptions = {
     '!<rootDir>/build/**',
     '!<rootDir>/*.__mocks__.js',
     '!<rootDir>/coverage/**',
-    '!<rootDir>/jest/**',
+    '!<rootDir>/jest-helper/**',
     '!.eslintrc.js',
     '!babel.config.js',
     '!jest.config.ts',
@@ -34,9 +34,10 @@ const config: Config.InitialOptions = {
 
     // Handle module aliases
     '^@/components/(.*)$': '<rootDir>/components/$1',
+    '@jestHelper/(.*)$': '<rootDir>/jest-helper/$1',
   },
   // Add more setup options before each test is run
-  setupFilesAfterEnv: ['<rootDir>/jest/jest.setup.js'],
+  setupFilesAfterEnv: ['<rootDir>/jest-helper/jest.setup.js'],
   testPathIgnorePatterns: [
     '<rootDir>/node_modules/',
     '<rootDir>/.next/',
@@ -44,7 +45,7 @@ const config: Config.InitialOptions = {
     '<rootDir>/coverage/',
     '<rootDir>/src/modules/test/test/test.tsx',
     '<rootDir>/pages/test.tsx',
-    '<rootDir>/jest/',
+    '<rootDir>/jest-helper/',
   ],
   testEnvironment: 'jsdom',
   transform: {

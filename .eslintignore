@@ -3,3 +3,4 @@ Gruntfile.js
 function.js
 server/
 out/
+jest/jest.setup.js
