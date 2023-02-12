@@ -1,6 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Result Component Should render the blank component when the result is not there 1`] = `
+exports[`Result Component Should render the blank component when the result is not there 1`] = `null`;
+
+exports[`Result Component Should render the blank component when the result is not there 2`] = `
 <div
   className="result"
 >
@@ -8,9 +10,9 @@ exports[`Result Component Should render the blank component when the result is n
     className="resultMediaContainer"
   >
     <img
-      alt="extrovert"
+      alt="introvert"
       className="resultText"
-      src="images/result/extrovert.png"
+      src="images/result/introvert.png"
     />
     <div
       className="resultText"
@@ -20,9 +22,9 @@ exports[`Result Component Should render the blank component when the result is n
       >
         You are more of an
          
-        extrovert
+        introvert
       </div>
-      Extroverts tend to be quite outgoing and talkative. They enjoy spending time with other people, and feel energized in social situations. Oftentimes, extroverts like being the focus of attention. As an extrovert, people probably describe you as friendly and outgoing.
+      You feel that living alone is to live happily, and you prefer hiding in a crowd rather than standing out in one. You are perpetually tormented by the idea of doing things wrong, not understanding or not being alert enough or intelligent enough to do what others expect of you. You lack in self-confidence and you seem to believe that others are better than you. While in a conversation, for example, you would be more likely to go.
     </div>
   </div>
   <button
@@ -38,7 +40,7 @@ exports[`Result Component Should render the blank component when the result is n
 </div>
 `;
 
-exports[`Result Component should show the introvert result 1`] = `
+exports[`Result Component Should render the component with the result text and image 1`] = `
 <div
   className="result"
 >
@@ -46,9 +48,9 @@ exports[`Result Component should show the introvert result 1`] = `
     className="resultMediaContainer"
   >
     <img
-      alt="extrovert"
+      alt="introvert"
       className="resultText"
-      src="images/result/extrovert.png"
+      src="images/result/introvert.png"
     />
     <div
       className="resultText"
@@ -58,9 +60,9 @@ exports[`Result Component should show the introvert result 1`] = `
       >
         You are more of an
          
-        extrovert
+        introvert
       </div>
-      Extroverts tend to be quite outgoing and talkative. They enjoy spending time with other people, and feel energized in social situations. Oftentimes, extroverts like being the focus of attention. As an extrovert, people probably describe you as friendly and outgoing.
+      You feel that living alone is to live happily, and you prefer hiding in a crowd rather than standing out in one. You are perpetually tormented by the idea of doing things wrong, not understanding or not being alert enough or intelligent enough to do what others expect of you. You lack in self-confidence and you seem to believe that others are better than you. While in a conversation, for example, you would be more likely to go.
     </div>
   </div>
   <button
