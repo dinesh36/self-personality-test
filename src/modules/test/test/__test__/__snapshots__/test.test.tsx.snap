@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Component Should render the test component 1`] = `
+<div
+  className="test"
+>
+  <div
+    className="loadingContainer"
+  >
+    <div
+      aria-busy={true}
+      aria-live="polite"
+      className="ant-spin ant-spin-lg ant-spin-spinning css-dev-only-do-not-override-1n7nwfa"
+    >
+      <span
+        className="ant-spin-dot ant-spin-dot-spin"
+      >
+        <i
+          className="ant-spin-dot-item"
+        />
+        <i
+          className="ant-spin-dot-item"
+        />
+        <i
+          className="ant-spin-dot-item"
+        />
+        <i
+          className="ant-spin-dot-item"
+        />
+      </span>
+    </div>
+  </div>
+</div>
+`;
