@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Result Component changes the class when hovered 1`] = `
+<div
+  className="result"
+>
+  <div
+    className="resultMediaContainer"
+  >
+    <img
+      alt="extrovert"
+      className="resultText"
+      src="images/result/extrovert.png"
+    />
+    <div
+      className="resultText"
+    >
+      <div
+        className="subTitle"
+      >
+        You are more of an
+         
+        extrovert
+      </div>
+      Extroverts tend to be quite outgoing and talkative. They enjoy spending time with other people, and feel energized in social situations. Oftentimes, extroverts like being the focus of attention. As an extrovert, people probably describe you as friendly and outgoing.
+    </div>
+  </div>
+  <button
+    className="ant-btn css-dev-only-do-not-override-1n7nwfa ant-btn-primary button retakeTestButton"
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+  >
+    <span>
+      Retake Test
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Result Component should show the introvert result 1`] = `
+<div
+  className="result"
+>
+  <div
+    className="resultMediaContainer"
+  >
+    <img
+      alt="extrovert"
+      className="resultText"
+      src="images/result/extrovert.png"
+    />
+    <div
+      className="resultText"
+    >
+      <div
+        className="subTitle"
+      >
+        You are more of an
+         
+        extrovert
+      </div>
+      Extroverts tend to be quite outgoing and talkative. They enjoy spending time with other people, and feel energized in social situations. Oftentimes, extroverts like being the focus of attention. As an extrovert, people probably describe you as friendly and outgoing.
+    </div>
+  </div>
+  <button
+    className="ant-btn css-dev-only-do-not-override-1n7nwfa ant-btn-primary button retakeTestButton"
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+  >
+    <span>
+      Retake Test
+    </span>
+  </button>
+</div>
+`;
+
+exports[`changes the class when hovered 1`] = `null`;
