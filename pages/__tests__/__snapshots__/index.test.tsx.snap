@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`changes the class when hovered 1`] = `
+<div
+  className="home"
+>
+  <img
+    alt="logo"
+    className="homeImage"
+    src="images/app-logo.png"
+  />
+  <div
+    className="card "
+  >
+    <div
+      className="subTitle"
+    >
+      <img
+        alt="note"
+        src="images/home/note.svg"
+      />
+      Are you an introvert or an extrovert?
+    </div>
+    <p>
+      These two personality types are opposites — introverts focus inward, into their own thoughts, and extroverts focus outward, into the world. But don't get too excited; most people are a little bit of both. Do you want to know what kind of person you are ? Let's Check
+    </p>
+    <a
+      href="/test"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      onTouchStart={[Function]}
+    >
+      <button
+        className="ant-btn css-dev-only-do-not-override-1n7nwfa ant-btn-primary button startButton"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        <span>
+          Start Test
+        </span>
+      </button>
+    </a>
+  </div>
+</div>
+`;
