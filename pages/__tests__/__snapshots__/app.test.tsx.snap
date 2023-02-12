@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render the app layout 1`] = `
+<div
+  className="app"
+>
+  <a
+    href="/"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    onTouchStart={[Function]}
+  >
+    <div
+      className="header"
+    >
+      <img
+        alt="logo"
+        className="logo"
+        src="images/header/header-logo.png"
+      />
+      <div
+        className="title"
+      >
+        Self Personality Test
+      </div>
+    </div>
+  </a>
+  <div
+    className="mainTitle"
+  >
+    Test your personality
+  </div>
+  <div
+    className="appContent"
+  >
+    <div
+      className="leftContent"
+    >
+      <div />
+    </div>
+    <div
+      className="rightContent"
+    >
+      <div
+        className="adContent"
+      >
+        <img
+          alt="ad"
+          src="images/ad/google-ads.png"
+        />
+      </div>
+    </div>
+  </div>
+  <a
+    href="/"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    onTouchStart={[Function]}
+  >
+    <div
+      className="footer"
+    >
+      <div
+        className="appTitle"
+      >
+        <span>
+          SELF 
+        </span>
+        <span
+          className="primaryColor"
+        >
+          PERSONALITY 
+        </span>
+        <span>
+          TEST
+        </span>
+      </div>
+      <div
+        className="footerIcons"
+      >
+        <img
+          alt="twitter"
+          className="footerIcon"
+          src="/images/footer/twitter.svg"
+        />
+        <img
+          alt="facebook"
+          className="footerIcon"
+          src="/images/footer/facebook.svg"
+        />
+        <img
+          alt="instagram"
+          className="footerIcon"
+          src="/images/footer/instagram.svg"
+        />
+        <img
+          alt="youtube"
+          className="footerIcon"
+          src="/images/footer/youtube.svg"
+        />
+      </div>
+      <div>
+        dinesh36@github
+      </div>
+    </div>
+  </a>
+</div>
+`;

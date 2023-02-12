@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Result Component changes the class when hovered 1`] = `
+exports[`Result Component Should render the blank component when the result is not there 1`] = `
 <div
   className="result"
 >
@@ -75,5 +75,3 @@ exports[`Result Component should show the introvert result 1`] = `
   </button>
 </div>
 `;
-
-exports[`changes the class when hovered 1`] = `null`;

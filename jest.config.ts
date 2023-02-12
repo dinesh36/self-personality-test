@@ -19,6 +19,7 @@ const config: Config.InitialOptions = {
     '!babel.config.js',
     '!jest.config.ts',
     '!next.config.js',
+    '!<rootDir>/src/modules/test/shared/test.types.ts',
   ],
   moduleNameMapper: {
     // Handle CSS imports (with CSS modules)

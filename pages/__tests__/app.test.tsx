@@ -3,7 +3,7 @@ import { NextComponentType } from 'next';
 import App from '../_app';
 
 const NextCmp:NextComponentType = () => <div />;
-it('changes the class when hovered', () => {
+it('Should render the app layout', () => {
   const component = renderer.create(
     // @ts-ignore
     <App Component={NextCmp} pageProps={{ className: 'test' }} />,

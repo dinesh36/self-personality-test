@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Question Component Should render the question component 1`] = `
+<div
+  className="card question"
+>
+  <div
+    className="questionTitle"
+  >
+    mock question
+  </div>
+  <div
+    className="answerOptions"
+  >
+    <div
+      className="answerOption selected"
+      onClick={[Function]}
+    >
+      <span>
+        B
+        .  
+        answer 1
+      </span>
+      <img
+        alt="selected icon"
+        src="images/test/selected-icon.svg"
+      />
+    </div>
+    <div
+      className="answerOption "
+      onClick={[Function]}
+    >
+      <span>
+        A
+        .  
+        answer 2
+      </span>
+    </div>
+  </div>
+  <div
+    className="buttonContainer firstQuestion"
+  >
+    <button
+      className="ant-btn css-dev-only-do-not-override-1n7nwfa ant-btn-primary button undefined"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      <span>
+        Next
+      </span>
+    </button>
+  </div>
+</div>
+`;

@@ -9,7 +9,7 @@ jest.mock('react-redux', () => ({
 }));
 
 describe('Result Component', () => {
-  it('changes the class when hovered', () => {
+  it('Should render the blank component when the result is not there', () => {
     const component = getComponentWithReduxWrapper(<Result />);
     const cmp = component.toJSON();
 

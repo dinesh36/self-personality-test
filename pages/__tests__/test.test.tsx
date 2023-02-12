@@ -1,7 +1,7 @@
 import { getComponentWithReduxWrapper } from '@jestHelper/test-util';
 import Test from '../test';
 
-it('changes the class when hovered', () => {
+it('Should render the test page', () => {
   const component = getComponentWithReduxWrapper(<Test />);
   const cmp = component.toJSON();
 
