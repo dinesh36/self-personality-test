@@ -13,7 +13,14 @@ function Footer() {
     const icons = ['twitter', 'facebook', 'instagram', 'youtube'];
     return (
       <div className={styles.footerIcons}>
-        {icons.map((iconName) => <img className={styles.footerIcon} src={`/images/footer/${iconName}.svg`} alt={iconName} />)}
+        {icons.map((iconName) => (
+          <img
+            key={iconName}
+            className={styles.footerIcon}
+            src={`/images/footer/${iconName}.svg`}
+            alt={iconName}
+          />
+        ))}
       </div>
     );
   };
