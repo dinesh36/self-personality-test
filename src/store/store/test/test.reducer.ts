@@ -2,7 +2,7 @@ import { cloneDeep } from 'lodash';
 import TEST_ACTIONS from './test.action-types';
 import { ITestState, IQuestion, IResult } from '../../../modules/test/shared/test.types';
 
-const initialState: ITestState = {
+export const initialState: ITestState = {
   questions: [],
   currentQuestionIndex: 0,
   isCompleted: false,
@@ -16,7 +16,7 @@ interface IActionArgs{
   newQuestionIndex?: number,
   questionId?: number,
   answerOptionId?: number,
-  result: IResult
+  result?: IResult
 }
 
 export default (state = cloneDeep(initialState), action: IActionArgs) => {
